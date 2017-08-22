@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="config" class="cn.crap.utils.Config">
+	
+		<property name="redisIp" value=""/>
+		
+		<property name="redisPort" value="6379"/>
+		
+		<!-- 为空串则表示没有密码 -->
+		<property name="redisPwd" value=""/>
+		
+		<!-- reids连接池大小 -->
+		<property name="redisPoolSize" value="50"/>
+		
+		<property name="redisKeyPrefix" value="api:crap:"/>
+		
+		<!-- 缓存时间，单位：s -->
+		<property name="cacheTime" value="3600"/>
+		
+		
+		<property name="loginInforTime" value="3600"/>
+		
+		<!-- 上传文件大小限制，单位：M -->
+		<property name="fileSize" value="20"/>
+		
+		<!-- 允许上传的文件类型 -->
+		<property name="fileType" value=",gif,jpg,jpeg,png,bmp,ico,"/>
+		<!-- 允许上传的图片类型 -->
+		<property name="imageType" value=",txt,doc,xls,xlsx,rar,zip,pdf,docx,"/>
+	</bean>
+</beans>
