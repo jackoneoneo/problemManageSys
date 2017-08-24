@@ -263,7 +263,7 @@
 		<!-- End:读取xml配置 -->
 	</dependencies>
 	<build>
-		<finalName>api</finalName>
+		<finalName>problemManageSys</finalName>
 		<!-- 设置项目jdk版本，编码 -->
 		<plugins>
 			<plugin>
