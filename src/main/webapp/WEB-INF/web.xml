@@ -18,7 +18,7 @@
   </listener>
   <filter>
     <filter-name>CharactorEncodingFilter</filter-name>
-    <filter-class>cn.crap.framework.CharactorEncodingFilter</filter-class>
+    <filter-class>com.clou.framework.CharactorEncodingFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>CharactorEncodingFilter</filter-name>

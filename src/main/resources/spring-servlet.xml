@@ -26,8 +26,8 @@
 	<aop:aspectj-autoproxy proxy-target-class="true"/>        
 	<!-- 采用注解的方式配置，在部分操作系统或tomcat中由于初始化顺序不一致，会报错 -->
 	<!-- 必须放在component-scan之上，优先创建该bean -->
-	<bean class="cn.crap.framework.SpringContextHolder" />
-	<context:component-scan base-package="cn.crap" />
+	<bean class="com.clou.framework.SpringContextHolder" />
+	<context:component-scan base-package="com.clou" />
 	<!-- 业务错误码 -->
 	<import resource="errorInfo.xml" />
 	<import resource="config.xml" />
@@ -52,7 +52,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="packagesToScan">
 			<list>
-				<value>cn.crap</value>
+				<value>com.clou</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -82,7 +82,7 @@
 		<!-- 国际化操作拦截器 如果采用基于（请求/Session/Cookie）则必需配置 -->
 		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
 		<!-- 如果不定义 mvc:mapping path 将拦截所有的URL请求 -->
-		<bean class="cn.crap.framework.auth.AuthInterceptor"></bean>
+		<bean class="com.clou.framework.auth.AuthInterceptor"></bean>
 	</mvc:interceptors>
 	
 	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
